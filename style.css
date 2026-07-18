@@ -1,1 +1,262 @@
+/* =========================================
+   DIGITAL FLOW — GLOBAL STYLESHEET
+   Color rule: Black + White is the base.
+   Green is ONLY used for "organic growth" proof points.
+   ========================================= */
 
+/* Load a clean, modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset: removes default browser spacing so design is predictable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color variables — define once, reuse everywhere with var(--name) */
+:root {
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --gray-text: #b3b3b3;
+  --border-gray: #2a2a2a;
+  --green: #00e676; /* ONLY for organic/growth proof points */
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 6%;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+/* Brand name sits on the LEFT — this is your website's core keyword */
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav a {
+  color: var(--gray-text);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--white);
+}
+
+/* ---------- HERO SECTION (Home page only) ---------- */
+.hero {
+  padding: 120px 6% 100px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  max-width: 850px;
+  line-height: 1.25;
+}
+
+.hero p {
+  margin-top: 24px;
+  font-size: 1.1rem;
+  color: var(--gray-text);
+  max-width: 600px;
+}
+
+/* ---------- SUMMARY SECTIONS (Home page teasers) ---------- */
+.summary-block {
+  padding: 60px 6%;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.summary-block h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.summary-block p {
+  color: var(--gray-text);
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+
+/* ---------- LINK BUTTON (used for "Go to Blog", "See Projects" etc.) ---------- */
+.link-arrow {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 2px;
+}
+
+.link-arrow:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+/* ---------- ORGANIC / GREEN DOT ---------- */
+/* Use this ONLY next to things that are truly organic (no paid ads) */
+.organic-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--green);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* ---------- STAT CALLOUT (big numbers) ---------- */
+.stat-callout {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.stat-label {
+  color: var(--gray-text);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+/* ---------- GENERIC PAGE CONTAINER (for inner pages) ---------- */
+.page-content {
+  padding: 80px 6%;
+  max-width: 900px;
+}
+
+.page-content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+
+.page-content h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.page-content p {
+  color: var(--gray-text);
+  margin-bottom: 16px;
+}
+
+/* ---------- CASE STUDY CARDS (Projects page) ---------- */
+.case-study {
+  border: 1px solid var(--border-gray);
+  padding: 32px;
+  margin-top: 32px;
+  border-radius: 6px;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid var(--gray-text);
+  color: var(--gray-text);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+/* ---------- TIMELINE / ROADMAP ---------- */
+.roadmap-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-gray);
+  color: var(--gray-text);
+}
+
+/* ---------- BLOG LIST ---------- */
+.blog-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.blog-item h2 {
+  margin-top: 0;
+}
+
+.blog-date {
+  color: var(--gray-text);
+  font-size: 0.85rem;
+}
+
+/* ---------- CONTACT FORM ---------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin-top: 32px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: var(--black);
+  border: 1px solid var(--border-gray);
+  color: var(--white);
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  padding: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--green);
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  padding: 32px 6%;
+  color: var(--gray-text);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-gray);
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stat-callout {
+    font-size: 2.2rem;
+  }
+}
