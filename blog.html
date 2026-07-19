@@ -10,9 +10,8 @@
 <body>
 
   <header class="site-header">
- <a href="index.html" class="brand"><span class="brand-dot"></span>Digital Flow</a>
+    <a href="index.html" class="brand"><span class="brand-dot"></span>Digital Flow</a>
     <nav class="main-nav">
-       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="blog.html">Blog</a>
       <a href="projects.html">Projects</a>
@@ -20,31 +19,37 @@
     </nav>
   </header>
 
-  <main class="page-content">
-  <h1>Blog</h1>
-  <p>Notes on SEO and marketing strategy, written while I execute real projects.</p>
+  <main class="page-content blog-page">
+    <h1>Blog</h1>
+    <p>Notes on SEO and marketing strategy, written while I execute real projects.</p>
 
-  <!-- Blog posts now sit in a horizontal grid instead of stacked rows -->
-  <div class="blog-grid">
+    <!-- Each post is one <a class="card"> — the whole card is clickable.
+         To add a new post: copy one card block, change the text and href. -->
+    <div class="card-grid">
 
-    <div class="blog-card">
-      <span class="blog-date">July 2026</span>
-      <h2>Keyword Research for Beginners: How I Did It for My First SEO Project</h2>
-      <p>A first-hand walkthrough of my actual keyword research process — the tools, the steps, and the mistake I almost made.</p>
-      <a href="blog-post-keyword-research.html" class="link-arrow">Read post →</a>
+      <a href="blog-post-keyword-research.html" class="card">
+        <div class="card-inner">
+          <span class="blog-date">July 2026</span>
+          <h2>Keyword Research for Beginners: How I Did It for My First SEO Project</h2>
+          <p>A first-hand walkthrough of my actual keyword research process — the tools, the steps, and the mistake I almost made.</p>
+          <span class="card-arrow">Read post →</span>
+        </div>
+      </a>
+
+      <a href="blog-post-seo-basics.html" class="card">
+        <div class="card-inner">
+          <span class="blog-date">July 2026</span>
+          <h2>SEO Basics: Where Every Ranking Actually Starts</h2>
+          <p>A breakdown of keyword research and why it's the foundation everything else in SEO is built on.</p>
+          <span class="card-arrow">Read post →</span>
+        </div>
+      </a>
+
+      <!-- Add future posts here as more .card blocks -->
+
     </div>
+  </main>
 
-    <div class="blog-card">
-      <span class="blog-date">July 2026</span>
-      <h2>SEO Basics: Where Every Ranking Actually Starts</h2>
-      <p>A breakdown of keyword research and why it's the foundation everything else in SEO is built on.</p>
-      <a href="blog-post-seo-basics.html" class="link-arrow">Read post →</a>
-    </div>
-
-    <!-- Add future posts here as more <div class="blog-card"> blocks -->
-
-  </div>
-</main>
   <footer class="site-footer">
     © 2026 Digital Flow — K S Vishal
   </footer>
