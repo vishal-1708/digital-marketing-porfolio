@@ -1,47 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Digital Flow</title>
-  <meta name="description" content="Get in touch with K S Vishal to talk about SEO strategy or organic social media growth.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Digital Flow</title>
+<meta name="description" content="Get in touch with K S Vishal about SEO strategy or organic social media growth.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="site-header">
+<a href="index.html" class="brand"><span class="brand-dot"></span>Digital Flow</a>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="blog.html">Blog</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
 
-  <header class="site-header">
-   <a href="index.html" class="brand"><span class="brand-dot"></span>Digital Flow</a>
-    <nav class="main-nav">
-       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<main class="page-content">
+<h1>Let's talk</h1>
+<p>Looking to grow your organic traffic or social presence? Send me a message.</p>
+<form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+<input type="text" name="name" placeholder="Your name" required>
+<input type="email" name="email" placeholder="Your email" required>
+<textarea name="message" rows="5" placeholder="Your message" required></textarea>
+<button type="submit">Send message</button>
+</form>
+<p style="margin-top:24px;">Or email me directly: vishalkavitha999@gmail.com</p>
+</main>
 
-  <main class="page-content">
-    <h1>Let's talk</h1>
-    <p>Looking to grow your organic traffic or social presence? Send me a message.</p>
-
-    <!-- 
-      IMPORTANT: replace "yourFormID" below with your real Formspree ID.
-      Steps: go to formspree.io → sign up free → create a form → 
-      it gives you a URL like https://formspree.io/f/abc123 → paste it in action=""
-    -->
-    <form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-      <button type="submit">Send message</button>
-    </form>
-
-    <p style="margin-top:24px;">Or email me directly: vishalkavitha999@gmail.com</p>
-  </main>
-
-  <footer class="site-footer">
-    © 2026 Digital Flow — K S Vishal
-  </footer>
-
+<footer class="site-footer">© 2026 Digital Flow — K S Vishal</footer>
 </body>
 </html>
