@@ -1,5 +1,5 @@
 /* =========================================
-   DIGITAL FLOW — GLOBAL STYLESHEET (v5)
+   DIGITAL FLOW — GLOBAL STYLESHEET (v6)
    Black is the dominant background.
    White is the dominant text/foreground.
    Green is ONLY for organic growth proof + brand dot.
@@ -46,20 +46,21 @@ h1, h2, p, a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
-  padding: 18px 6%;
+  gap: 10px;
+  padding: 16px 6%;
   border-bottom: 1px solid var(--border-gray);
 }
 
 .brand {
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--white);
   text-decoration: none;
   letter-spacing: 0.5px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .brand-dot {
@@ -76,9 +77,8 @@ h1, h2, p, a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  flex: 1;
+  gap: 18px;
+  flex-wrap: nowrap; /* keeps nav links on one line, never wraps */
 }
 
 .main-nav a {
@@ -118,9 +118,8 @@ h1, h2, p, a {
 /* =========================================
    CARD GRID SYSTEM
    Used for: home page summary cards, blog cards.
-   Uses flex-wrap instead of a fixed grid column count,
-   so cards keep a safe minimum width and never squeeze
-   text into single-word lines.
+   Uses flex-wrap so cards keep a safe minimum width
+   and never squeeze text into single-word lines.
    ========================================= */
 
 .card-grid {
@@ -131,7 +130,7 @@ h1, h2, p, a {
 }
 
 .card {
-  flex: 1 1 260px;   /* grow/shrink, but never smaller than 260px */
+  flex: 1 1 260px; /* grow/shrink, never smaller than 260px */
   max-width: 400px;
   background-color: var(--black-soft);
   border: 1px solid var(--border-gray);
@@ -180,7 +179,7 @@ h1, h2, p, a {
   margin-bottom: 6px;
 }
 
-/* ---------- LINK BUTTON (used inline in normal paragraphs) ---------- */
+/* ---------- LINK BUTTON (used inline in paragraphs) ---------- */
 .link-arrow {
   color: var(--white);
   text-decoration: none;
@@ -216,89 +215,4 @@ h1, h2, p, a {
 
 .stat-label {
   color: var(--gray-text);
-  font-size: 0.9rem;
-  margin-top: 4px;
-}
-
-/* ---------- PAGE CONTAINER (About, Projects, Blog, Contact) ---------- */
-.page-content {
-  padding: 60px 6%;
-  max-width: 900px;
-}
-
-.page-content h1 {
-  font-size: clamp(1.6rem, 5vw, 2.2rem);
-  margin-bottom: 18px;
-}
-
-.page-content h2 {
-  font-size: clamp(1.05rem, 3vw, 1.4rem);
-  margin-top: 28px;
-  margin-bottom: 10px;
-}
-
-.page-content p {
-  color: var(--gray-text);
-  margin-bottom: 14px;
-}
-
-/* Blog page needs a little more room since cards sit side by side */
-.blog-page {
-  max-width: 1100px;
-}
-
-/* ---------- CASE STUDY CARDS (Projects page) ---------- */
-.case-study {
-  border: 1px solid var(--border-gray);
-  background-color: var(--black-soft);
-  padding: 24px;
-  margin-top: 24px;
-  border-radius: 8px;
-}
-
-.badge {
-  display: inline-block;
-  border: 1px solid var(--gray-text);
-  color: var(--gray-text);
-  font-size: 0.75rem;
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-bottom: 14px;
-}
-
-/* ---------- ROADMAP ---------- */
-.roadmap-item {
-  padding: 12px 0;
-  border-bottom: 1px solid var(--border-gray);
-  color: var(--gray-text);
-}
-
-/* ---------- CONTACT FORM ---------- */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  max-width: 480px;
-  margin-top: 26px;
-  width: 100%;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background-color: var(--black-soft);
-  border: 1px solid var(--border-gray);
-  color: var(--white);
-  padding: 12px;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 4px;
-  width: 100%;
-}
-
-.contact-form button {
-  background-color: var(--white);
-  color: var(--black);
-  border: none;
-  padding: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 4px;
+  font-size:
