@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO META DESCRIPTION: this is what shows up on Google search results -->
   <title>Digital Flow | K S Vishal — SEO & Social Media Marketing</title>
   <meta name="description" content="Digital Flow is the portfolio of K S Vishal, a digital marketer specializing in SEO and organic social media growth. See live SEO projects, case studies, and marketing insights.">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER: brand name on LEFT, nav links on RIGHT -->
   <header class="site-header">
- <a href="index.html" class="brand"><span class="brand-dot"></span>Digital Flow</a>
+    <a href="index.html" class="brand"><span class="brand-dot"></span>Digital Flow</a>
     <nav class="main-nav">
-      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="blog.html">Blog</a>
       <a href="projects.html">Projects</a>
@@ -24,48 +19,51 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION: this is the main content of the home page -->
   <section class="hero">
     <h1>I help brands grow through strategic SEO and Social Media Marketing.</h1>
     <p>I'm K S Vishal — a digital marketer focused on ranking websites through SEO and growing brands organically on Instagram. This site tracks my real, in-progress work.</p>
   </section>
 
-  <!-- SUMMARY: About teaser -->
-<!-- SUMMARY GRID: About / Projects / Blog / Contact previews -->
-  <section class="summary-grid-wrapper">
-    <div class="summary-grid">
+  <!-- The entire card is one clickable link (<a>), not just a "read more" text -->
+  <div class="card-grid">
 
-      <div class="grid-card">
+    <a href="about.html" class="card">
+      <div class="card-inner">
         <h2>Who I am</h2>
         <p>A digital marketer with a background in Computer Science and Data Analytics, combining technical thinking with hands-on marketing execution.</p>
-        <a href="about.html" class="link-arrow">Learn more about me →</a>
+        <span class="card-arrow">Learn more about me →</span>
       </div>
+    </a>
 
-      <div class="grid-card">
+    <a href="projects.html" class="card">
+      <div class="card-inner">
         <h2>Featured work</h2>
         <p>A live SEO project built from scratch, plus a completed organic Instagram growth case study.</p>
-        <a href="projects.html" class="link-arrow">See the projects →</a>
+        <span class="card-arrow">See the projects →</span>
       </div>
+    </a>
 
-      <div class="grid-card">
+    <a href="blog.html" class="card">
+      <div class="card-inner">
         <h2>From the blog</h2>
         <p>Notes and breakdowns on SEO and marketing strategy, written as I learn and execute them.</p>
-        <a href="blog.html" class="link-arrow">Read the blog →</a>
+        <span class="card-arrow">Read the blog →</span>
       </div>
+    </a>
 
-      <div class="grid-card">
+    <a href="contact.html" class="card">
+      <div class="card-inner">
         <h2>Let's talk</h2>
         <p>Looking to grow your organic traffic or social presence?</p>
-        <a href="contact.html" class="link-arrow">Contact me →</a>
+        <span class="card-arrow">Contact me →</span>
       </div>
+    </a>
 
-    </div>
-  </section>
-<center>
+  </div>
+
   <footer class="site-footer">
     © 2026 Digital Flow — K S Vishal
   </footer>
-</center>
 
 </body>
 </html>
