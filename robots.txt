@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow:
 
 Sitemap: https://vishal-1708.github.io/digital-flow/sitemap.xml
